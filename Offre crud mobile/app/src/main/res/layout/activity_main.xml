@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/amiko"
+        android:text="Offers List"
+        android:textColor="@color/teal"
+        android:textSize="48sp"
+        android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecycleView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/infoButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/baseline_info_24" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Delete"
+                android:clickable="true"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/baseline_delete_24" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="Edit"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_edit_note_24"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/teal_200"
+                android:contentDescription="" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/addUserButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="AddOffre"
+                android:clickable="true"
+                app:srcCompat="@drawable/baseline_add_circle_24"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/teal_200"
+                android:contentDescription="" />
+
+
+        </LinearLayout>
+    </LinearLayout>

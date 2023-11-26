@@ -1,0 +1,46 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editTextCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Code"
+        />
+
+    <EditText
+        android:id="@+id/editTextIntitule"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Intitule"/>
+
+    <EditText
+        android:id="@+id/editSpecialite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specialite"/>
+
+    <EditText
+        android:id="@+id/editSociete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Societe"/>
+
+    <EditText
+        android:id="@+id/editTextnbPostes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de Postes"/>
+    <EditText
+        android:id="@+id/editTextPays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pays"/>
+
+
+</LinearLayout>
